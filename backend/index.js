@@ -64,3 +64,7 @@ app.get("/datos", rutasProtegidas, (req, res) => {
 
   res.json(datos);
 });
+
+// Initialize the default app
+var admin = require('firebase-admin');
+var app = admin.initializeApp();
